@@ -2,7 +2,7 @@
 
 class Shirt:
     size_price = 100
-    def __init__(self, sid, sname, stype , price, size):
+    def __init__(self, sid = 222, sname = "", stype = "kurta" , price = 1100, size = "medium"):
         print("cunstructore called :")
         self.id = sid
         self.name = sname
@@ -34,7 +34,7 @@ class Shirt:
         else:
             print("invalid choice :")
 
-obj1 = Shirt("sk570", "sangram shirt", "cotton", 1000, "small")
+obj1 = Shirt("sk570", "sangram shirt", "denim shirt", 1000, "small")
 obj1.price_per_size("small")
 obj1.showData()            
       
